@@ -1,8 +1,8 @@
 {
-  "name": "public",
+  "name": "RomanAlekseev",
   "version": "1.0.0",
-  "description": "Javascript practice project",
-  "main": "index.js",
+  "description": "Javascript Practice Project https://git.heroku.com/geekb-dz.git",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
