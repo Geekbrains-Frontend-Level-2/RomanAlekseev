@@ -1,4 +1,4 @@
-const http = require('http')
+gitconst http = require('http')
 const fs = require('fs')
 
 const server = http.createServer((req, res) => {
@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     const body = req.url === '/css/styles.css'
       ? fs.readFileSync(`${publicPath}/css/style.css`, 'utf8')
       : fs.readFileSync(`${pablicPath}/index.html`,'utf8')
-      req.end(body)
+      res.end(body)
 })
 
 const port = process.env.PORT || 3000
