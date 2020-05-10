@@ -1,10 +1,4 @@
 
-const fs = require('fs')
-const text = fs.readFileSync('/script.js', 'utf8')
-console.log(text)
-const now = new Date().toLocaleString()
-console.log(now)
-
 window.alert("Hello from script.js!");
 
 /* const goods = [
