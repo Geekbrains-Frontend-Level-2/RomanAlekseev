@@ -1,4 +1,6 @@
-const goods = [
+window.alert("Hello from script.js!");
+
+/* const goods = [
     { title: 'Shirt', price: 150 },
     { title: 'Socks', price: 50 },
     { title: 'Jacket', price: 350 },
@@ -14,4 +16,4 @@ const goods = [
     document.querySelector('goods-list').innerHTML = goodsList;
   }
   
-  renderGoodsList(goods);
+  renderGoodsList(goods); */

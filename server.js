@@ -9,6 +9,17 @@ const server = http.createServer((req, res) => {
       ? fs.readFileSync(`${publicPath}/css/style.css`, 'utf8')
       : fs.readFileSync(`${publicPath}/index.html`,'utf8')
       res.end(body)
+
+    const js = req.url === `/script.js`
+      ? fs.readFileSync(`${publicPath}/script.html`,'utf8')
+      : fs.readFileSync(`${publicPath}/index.html`,'utf8')
+      res.end(js)
+
+    const text = fs.readFileSync('script.js', 'utf8')
+    console.log(text)
+    const now = new Date().toLocaleString()
+    console.log(now)
+
 })
 
 const port = process.env.PORT || 3000
