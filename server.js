@@ -10,11 +10,6 @@ const server = http.createServer((req, res) => {
       : fs.readFileSync(`${publicPath}/index.html`,'utf8')
       res.end(body)
 
-    const js = req.url === `/script.js`
-      ? fs.readFileSync(`${publicPath}/script.js`,'utf8')
-      : fs.readFileSync(`${publicPath}/index.html`,'utf8')
-      res.end(js)
-
 })
 
 const port = process.env.PORT || 3000
