@@ -16,7 +16,7 @@ class Renderer {
     this._template = document.createElement('div')
   }
 
-  initTemplate() {
+  initTemplate () {
     if (!this._template) {
       return
     }
@@ -73,10 +73,10 @@ class CartItem extends Renderer {
     }
 
     this._template.innerHTML = `
-      <div class="cart_item">
+      <div class="cart__item">
         ${this._data.title} X ${this._counter} = ${this.totalPrice}
       </div>  
-      `
+    `
   }
 }
 
@@ -144,7 +144,7 @@ class Cart extends Renderer {
     }
   }
 
-  totalCostTemplate() {
+  totalCostTemplate () {
     let summaryContainer = document.querySelector('.cart__total')
     if (!summaryContainer) {
       summaryContainer = document.createElement('div')
@@ -157,7 +157,7 @@ class Cart extends Renderer {
 }
 
 class Item extends Renderer {
-  constructor(data = {}, cart, root) {
+  constructor (data = {}, cart, root) {
     super(root)
     this._cart = cart
     this._data = data
@@ -182,8 +182,8 @@ class Item extends Renderer {
       <div class="item_img">
         <div>NO IMAGE AVAILABLE</div>
       </div>
-      <div class="item__meta">Goods:<span>${title}</span></div>
-      <div class="item__meta">Price:<span>${price}</span></div>
+      <div class="item__meta">Goods: <span>${title}</span></div>
+      <div class="item__meta">Price: <span>${price}</span></div>
       <button class="btn btn_primary">Buy</button>
     `
 
@@ -208,7 +208,7 @@ class ItemList extends Renderer {
       .then((res) => {
         this._items = res.data.map(item => {
           return new Item(item, this._cart)
-        })
+         })
       })
   }
 
