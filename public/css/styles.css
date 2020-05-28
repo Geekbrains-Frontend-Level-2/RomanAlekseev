@@ -89,3 +89,7 @@ body {
   .item__meta span {
     font-weight: normal;
   }
+
+  .cart__empty {
+    color: red;
+  }
