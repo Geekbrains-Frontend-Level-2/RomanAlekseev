@@ -97,3 +97,7 @@ body {
   .cart__item {
     color: red;
   }
+
+  .cart__total {
+    color: white;
+  }
