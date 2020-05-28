@@ -91,5 +91,9 @@ body {
   }
 
   .cart__empty {
+    color: yellow;
+  }
+
+  .cart_item {
     color: red;
   }
