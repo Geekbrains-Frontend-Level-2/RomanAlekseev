@@ -201,7 +201,7 @@ class ItemList extends Renderer {
   }
 
   fetchData() {
-    return fetch('http://localhost:3000/database/items.json')
+    return fetch('http://database/items.json')
       .then(res => {
         return res.json()
       })
